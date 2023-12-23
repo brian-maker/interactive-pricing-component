@@ -1,0 +1,85 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:hsl(230, 100%, 99%) ;
+    font-family: 'Manrope', sans-serif;
+}
+main{
+    border: 1px solid red;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(./images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: -0% -100%;
+}
+section{
+    border: 1px solid red;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+h1{
+    font-weight: 800;
+    color: hsl(227, 35%, 25%);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+section p{
+    max-width:200px;
+    margin: 0 auto;
+    font-size: 15px;
+    color: hsl(225, 20%, 60%);
+    line-height: 1.5;
+}
+.component{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 1px 2px 4px rgba(142, 137, 137, 0.5);
+    margin-bottom: 5rem;
+    padding-top:2rem ;
+}
+.number{
+    padding-bottom: 2rem;
+    font-weight: 500;
+    color: hsl(225, 20%, 60%);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.slidecontainer{
+    width: 100%;
+}
+.slider{
+    width: 80%;
+    appearance: none;
+    height: 10px;
+    border-radius: 20px;
+    background-color: hsl(224, 65%, 95%);
+    outline: none;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url(./images/icon-slider.svg);
+    border-radius: 50%;
+  }
+  .slider::-moz-range-thumb {
+    width: 23px;
+    height: 25px;
+    border: 0;
+    cursor: pointer;
+    background-color: hsl(174, 86%, 45%);
+
+  }
