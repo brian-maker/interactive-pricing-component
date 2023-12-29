@@ -10,52 +10,59 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <section>
-      <h1>Simple, traffic-based pricing</h1>
+  <main class="card-wrapper">
+    
+    <h1 class="sr-only">Simple, traffic-based pricing</h1>
+    <header class="pricing-card-header">
+      <h2>Simple, traffic-based pricing</h2>
       <p>
-        Sign-up for our 30-day trial. No credit card required.
+      Sign-up for our 30-day trial. No credit card required.
       </p>
-    </section>
+    </header>
 
-    <div class="component">
-      <p class="number"><span class="noPageViews">-</span>Pageviews</p>
-      <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="16" class="slider" id="myRange">
-        <p><span>$</span>/month</p>
-        <div class="billing">
-          <p>Monthly Billing</p>
-
-          <div class="toggle"></div>
-          <div>
-            <p>Yearly Billing</p>
-            <button class="discount">25%</button>
-          </div>
-        </div>
+    <form action="" class="pricing-card">
+      <span class="pricing-card_views">100k PAGEVIEWS</span>
+      <input type="range" class="pricing-card_views-range" name="range" id="range" min="1" max="5" value="3" step="1">
+      <div class="pricing-card_price-container">
+        <span class="pricing-card_price">$16.00</span>
+        <span class="pricing-card_billing-frequency">/ month</span>
       </div>
-      <hr>
-      <div class="bottomsection">
-        <div>
-          <img src="./images/icon-check.svg" alt="icon-check">
-          <p>Unlimited websites</p>
-        </div>
-        <div>
-          <img src="./images/icon-check.svg" alt="icon-check">
-          <p>100% data ownership</p>
-        </div>
-        <div>
-          <img src="./images/icon-check.svg" alt="icon-check">
-          <p>Email reports</p>
+
+      <label class="pricing-card_billing-frequency-toggle" for="billing-freq">
+        <span class="pricing-card_freq-option pricing-card_freq-option--monthly">Monthly Billing</span>
+        <input type="checkbox" name="billing-freq" id="billing-freq">
+        <div class="toggle">
+          <span class="toggle-circle"></span>
         </div>
 
-        <button class="trial">
-          Start my trial
-        </button>
+        <span class="pricing-card_freq-option pricing-card_freq-option--annual">Yearly Billing</span>
+      </label>
+
+      <div class="price-card_bottom">
+        <div class="pricing-card_features">
+          <span class="pricing-card_feature">
+            <img src="./images/icon-check.svg" alt="icon-check">
+            <span>Unlimited websites</span>
+          </span>
+          <span class="pricing-card_feature">
+            <img src="./images/icon-check.svg" alt="icon-check">
+            <span>100% data ownership</span>
+          </span>
+          <span class="pricing-card_feature">
+            <img src="./images/icon-check.svg" alt="icon-check">
+            <span>Email reports</span>
+          </span>
+        </div>
+
+        <button type="submit" class="pricing-card_submit-btn">Start my trial</button>
       </div>
-    </div>
+
+    </form>
+
+      
+      
   </main>
 
- 
   <script src="app.js"></script>
 </body>
 </html>
